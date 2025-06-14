@@ -3,56 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>WebStudio</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@100..900&family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalize CSS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+      href="https://unpkg.com/modern-normalize/modern-normalize.css"
     />
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const popup = document.querySelector('.popup')
-        const openPopupBtn = document.querySelector('.blue_button')
-        const closePopupBtn = document.querySelector('.popup-btn-close')
-
-        popup.style.display = 'none'
-        openPopupBtn.addEventListener('click', function () {
-          popup.style.display = 'block'
-        })
-        closePopupBtn.addEventListener('click', function () {
-          popup.style.display = 'none'
-        })
-        window.addEventListener('click', function (event) {
-          if (event.target === popup) {
-            popup.style.display = 'none'
-          }
-        })
-      })
-
-      document.addEventListener('DOMContentLoaded', function () {
-        const mobileMenu = document.querySelector('.mobile-menu-container')
-        const openMobileBtn = document.querySelector('.mobile-btn-open')
-        const closeMobileBtn = document.querySelector('.mobile-btn-close')
-
-        mobileMenu.style.display = 'none'
-        openMobileBtn.addEventListener('click', function () {
-          mobileMenu.style.display = 'flex'
-        })
-        closeMobileBtn.addEventListener('click', function () {
-          mobileMenu.style.display = 'none'
-        })
-      })
-    </script>
-    <title>WebStudio</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Header Bölümü-->
