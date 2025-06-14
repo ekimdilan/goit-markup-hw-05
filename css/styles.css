@@ -485,6 +485,59 @@ menu:active {
   margin-right: 120px;
 }
 /*Feedback-Form*/
+.footer-subscribe {
+  margin-left: 80px;
+  margin-right: 159px;
+}
+
+.footer-subscribe .footer-p {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-subscribe .footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-subscribe .footer-form .footer-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.footer-subscribe .footer-form .footer-button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+}
+
+.footer-button .footer-svg {
+  margin-left: 16px;
+}
 
 .modal-window {
   position: fixed;
@@ -499,11 +552,12 @@ menu:active {
 
 .modal-container {
   position: absolute;
-  top: 80px;
-  left: 516px;
+  top: 50%;
+  left: 50%;
   width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
+  padding: 72px 24px 24px 24px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -568,7 +622,7 @@ menu:active {
 
 .form-label {
   font-size: 12px;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
@@ -593,7 +647,6 @@ menu:active {
 .form-input:focus {
   border-color: #4d5ae5;
 }
-
 .form-box-svg {
   position: absolute;
   top: 50%;
@@ -604,6 +657,9 @@ menu:active {
 
 .form-box-svg:focus {
   fill: #4d5ae5;
+}
+.form-box-text {
+  margin-bottom: 16px;
 }
 
 .form-textarea {
@@ -625,6 +681,9 @@ menu:active {
 .form-textarea:focus {
   border-color: #4d5ae5;
 }
+.form-check {
+  margin-bottom: 24px;
+}
 
 .form-check-label {
   font-size: 12px;
@@ -634,6 +693,13 @@ menu:active {
 }
 
 .form-check-span {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -662,6 +728,7 @@ input[type='checkbox']:checked + label .form-check-span {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  cursor: pointer;
   background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
