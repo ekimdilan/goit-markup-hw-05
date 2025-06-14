@@ -658,6 +658,7 @@ menu:active {
 .form-box-svg:focus {
   fill: #4d5ae5;
 }
+
 .form-box-text {
   margin-bottom: 16px;
 }
